@@ -57,6 +57,10 @@ async function main() {
     text: emailBody
   };
 
+  if (core.getInput('reply_to')) {
+    mailOptions.replyTo = core.getInput('reply_to');
+  }
+
   transporter.sendMail(mailOptions, function(error, info){
     if (error) {
       core.info('Email not sent ' + error.message);
