@@ -1,0 +1,33 @@
+name: 'Send notification email based on pull request description'
+description: 'GitHub Action that sends a notification email based on pull request description'
+author: 'Jérémie Tabet'
+runs:
+  using: 'node12'
+  main: 'main.js'
+inputs:
+  github_token:
+    description: 'The GITHUB_TOKEN secret'
+    required: true
+  text_before:
+    description: 'The text to be included before the PR description'
+    required: false
+    default: ''
+  text_after:
+    description: 'The text to be included after the PR description'
+    required: false
+    default: ''
+  mail_service:
+    description: 'The mail service to use for sending emails (see https://nodemailer.com/smtp/well-known/ for the full list)'
+    required: true
+  mail_user:
+    description: 'The user name to log into your email account'
+    required: true
+  mail_password:
+    description: 'The user password to log into your email account'
+    required: true
+  mail_recipients:
+    description: 'A list of recipients for the email'
+    required: true
+branding:
+  icon: send
+  color: \#a62c21
