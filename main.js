@@ -45,7 +45,7 @@ async function main() {
 
   var mailOptions = {
     from: core.getInput('mail_user'),
-    to: core.getInput('mail_recipients').join(', '),
+    to: core.getInput('mail_recipients'),
     subject: core.getInput('subject'),
     text: emailBody
   };
