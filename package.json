@@ -2,8 +2,8 @@
     "name": "send-email-based-on-pr",
     "description": "Send notification email based on pull request description",
     "license": "MIT",
-    "version": "0.0.0",
-    "main": "main.js",
+    "version": "v1.0.0",
+    "main": "dist/index.js",
     "scripts": {
         "build": "ncc build main.js"
     },
