@@ -3,7 +3,7 @@ description: 'GitHub Action that sends a notification email based on pull reques
 author: 'Jérémie Tabet'
 runs:
   using: 'node12'
-  main: 'main.js'
+  main: 'dist/index.js'
 inputs:
   github_token:
     description: 'The GITHUB_TOKEN secret'
