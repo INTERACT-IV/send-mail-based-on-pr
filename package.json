@@ -1,0 +1,12 @@
+{
+    "name": "send-email-based-on-pr",
+    "description": "Send notification email based on pull request description",
+    "license": "MIT",
+    "version": "0.0.0",
+    "main": "main.js",
+    "dependencies": {
+        "@actions/core": "^1.2.5",
+        "@actions/github": "^4.0.0",
+        "nodemailer": "^6.4.11"
+    }
+}
