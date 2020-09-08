@@ -31,6 +31,10 @@ inputs:
   mail_recipients:
     description: 'A list of recipients for the email'
     required: true
+  reply_to:
+    description: 'An email address that will appear on the Reply-To: field'
+    required: false
+    default: ''
 branding:
   icon: send
   color: \#a62c21
